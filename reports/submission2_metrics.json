@@ -1,0 +1,126 @@
+{
+  "selection": "Four candidates on an inner grouped holdout; one selected before outer evaluation",
+  "outer_split": {
+    "n_splits": 5,
+    "seed": 42,
+    "fold": 0,
+    "fit_rows": 38254,
+    "validation_rows": 9563
+  },
+  "inner_split": {
+    "n_splits": 4,
+    "seed": 43,
+    "fold": 0,
+    "fit_rows": 28690,
+    "validation_rows": 9564
+  },
+  "candidates": [
+    {
+      "kind": "svc",
+      "C": 0.25,
+      "inner_macro_f1": 0.5168104501285482
+    },
+    {
+      "kind": "svc",
+      "C": 1.0,
+      "inner_macro_f1": 0.5028551038287454
+    },
+    {
+      "kind": "nbsvm",
+      "C": 0.25,
+      "inner_macro_f1": 0.5170402404366082
+    },
+    {
+      "kind": "nbsvm",
+      "C": 1.0,
+      "inner_macro_f1": 0.49710704339907186
+    }
+  ],
+  "selected": {
+    "kind": "nbsvm",
+    "C": 0.25,
+    "inner_macro_f1": 0.5170402404366082
+  },
+  "features": {
+    "word_ngrams": [
+      1,
+      2
+    ],
+    "char_ngrams": [
+      2,
+      5
+    ],
+    "min_df": 2,
+    "max_word_features": 150000,
+    "max_char_features": 250000
+  },
+  "macro_f1": 0.5275587793849877,
+  "baseline_macro_f1": 0.5113727016094687,
+  "improvement": 0.01618607777551906,
+  "classification_report": {
+    "0": {
+      "precision": 0.6565310492505353,
+      "recall": 0.6453378236160808,
+      "f1-score": 0.6508863178006581,
+      "support": 4751.0
+    },
+    "1": {
+      "precision": 0.5032778618255169,
+      "recall": 0.5494082025873933,
+      "f1-score": 0.525332280563232,
+      "support": 3633.0
+    },
+    "2": {
+      "precision": 0.4617044228694714,
+      "recall": 0.363019508057676,
+      "f1-score": 0.40645773979107314,
+      "support": 1179.0
+    },
+    "accuracy": 0.5740876294049985,
+    "macro avg": {
+      "precision": 0.5405044446485079,
+      "recall": 0.5192551780870501,
+      "f1-score": 0.5275587793849877,
+      "support": 9563.0
+    },
+    "weighted avg": {
+      "precision": 0.5742901810691732,
+      "recall": 0.5740876294049985,
+      "f1-score": 0.5730530948834909,
+      "support": 9563.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3066,
+      1470,
+      215
+    ],
+    [
+      1353,
+      1996,
+      284
+    ],
+    [
+      251,
+      500,
+      428
+    ]
+  ],
+  "sha256": {
+    "train": "a269ad841f824c6e60930cfda8cb25bdce58a6a1ee01fc1fe663d23b19e34449",
+    "test": "cca36f5416abfb8a41b1c84e5fa83aec18ffbff32fecd277c668a3f73312a38f",
+    "sample_submission": "0f7d405dbd1e88ea285c7138514b7652f7441e995dcaed338bb208a86c2f347d"
+  },
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "submission": "submissions/submission2_tfidf_nbsvm.csv",
+  "test_rows": 11955,
+  "elapsed_seconds": 58.49
+}

@@ -1,0 +1,119 @@
+{
+  "model": "word + character TF-IDF / balanced LinearSVC",
+  "seed": 42,
+  "validation": "First fold of 5-fold StratifiedGroupKFold; normalized text groups",
+  "hyperparameters": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 5000,
+    "word_ngrams": [
+      1,
+      2
+    ],
+    "char_ngrams": [
+      3,
+      5
+    ],
+    "word_max_features": 80000,
+    "char_max_features": 150000,
+    "min_df": 2,
+    "sublinear_tf": true
+  },
+  "rows": {
+    "train_total": 47817,
+    "fit": 38254,
+    "validation": 9563,
+    "test": 11955
+  },
+  "class_counts": {
+    "all": {
+      "0": 23756,
+      "1": 18163,
+      "2": 5898
+    },
+    "fit": {
+      "0": 19005,
+      "1": 14530,
+      "2": 4719
+    },
+    "validation": {
+      "0": 4751,
+      "1": 3633,
+      "2": 1179
+    },
+    "test_predictions": {
+      "0": 6124,
+      "1": 4477,
+      "2": 1354
+    }
+  },
+  "normalized_duplicate_rows": 669,
+  "conflicting_label_groups": 63,
+  "test_texts_also_in_train": 298,
+  "macro_f1": 0.5113727016094687,
+  "majority_macro_f1": 0.22127520842066042,
+  "classification_report": {
+    "0": {
+      "precision": 0.634340547162107,
+      "recall": 0.6539675857714166,
+      "f1-score": 0.6440045600580371,
+      "support": 4751.0
+    },
+    "1": {
+      "precision": 0.490529783145759,
+      "recall": 0.49187998898981555,
+      "f1-score": 0.49120395821880153,
+      "support": 3633.0
+    },
+    "2": {
+      "precision": 0.4295499021526419,
+      "recall": 0.37234944868532655,
+      "f1-score": 0.3989095865515675,
+      "support": 1179.0
+    },
+    "accuracy": 0.5576701871797554,
+    "macro avg": {
+      "precision": 0.518140077486836,
+      "recall": 0.5060656744821862,
+      "f1-score": 0.5113727016094687,
+      "support": 9563.0
+    },
+    "weighted avg": {
+      "precision": 0.554458431075361,
+      "recall": 0.5576701871797554,
+      "f1-score": 0.5557381624583225,
+      "support": 9563.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3107,
+      1406,
+      238
+    ],
+    [
+      1501,
+      1787,
+      345
+    ],
+    [
+      290,
+      450,
+      439
+    ]
+  ],
+  "sha256": {
+    "train": "a269ad841f824c6e60930cfda8cb25bdce58a6a1ee01fc1fe663d23b19e34449",
+    "test": "cca36f5416abfb8a41b1c84e5fa83aec18ffbff32fecd277c668a3f73312a38f",
+    "sample_submission": "0f7d405dbd1e88ea285c7138514b7652f7441e995dcaed338bb208a86c2f347d"
+  },
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "elapsed_seconds": 26.04
+}
