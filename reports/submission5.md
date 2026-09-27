@@ -31,10 +31,10 @@ The sandbox cannot access MPS; the benchmark succeeded outside the sandbox. The 
 Local background launch:
 
 ```bash
-python3 src/run_submission5_local.py --run-name submission5_local
+python3 src/run_submission5_local.py
 ```
 
-Progress is written to `models/<run-name>_launch/training.log`, with process information in `launch.json` and exit status in `completion.json` when the worker ends. A local run named `submission5_local` started at 17:34 UTC on 2026-09-27 while the Kaggle job remained queued. Keep the Mac connected to power with its lid open. The launcher prevents idle system sleep while training. No OpenAI API is used by the training process.
+Progress is written to `models/submission5_launch/training.log`, with process information in `launch.json` and exit status in `completion.json` when the worker ends. Keep the Mac connected to power with its lid open. The launcher prevents idle system sleep while training. No OpenAI API is used by the training process.
 
 For a foreground run with a new name:
 
