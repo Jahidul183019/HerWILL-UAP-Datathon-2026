@@ -38,6 +38,7 @@ Labels are 0 (explicitly toxic/hateful), 1 (subtly toxic), and 2 (neutral). Inpu
 | 2 | TF-IDF + NB-SVM | 0.52756 | 0.53744 |
 | 3 | NB-SVM + numerical text features | 0.53442 | 0.54601 |
 | 4 | Three TF-IDF NB-SVM feature configurations | 0.53766 | 0.54759 |
+| 5 | XLM-R-base | 0.55903 | 0.56654 |
 
 ## Submission 5 transformer experiment
 

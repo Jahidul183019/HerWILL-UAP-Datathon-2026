@@ -1,8 +1,8 @@
 # Submission 5: XLM-R experiment
 
-Local training started on 2026-09-27 at 21:34 Bangladesh time (15:34 UTC), then was stopped at the requested switch to Kaggle GPU. The local process group was terminated; its files are preserved. Submission 4 remains the best completed Kaggle submission, with validation Macro F1 0.5376578865 and public Macro F1 0.54759.
+Local training started on 2026-09-27 at 21:34 Bangladesh time (15:34 UTC), then was stopped at the requested switch to Kaggle GPU. The local process group was terminated; its files are preserved. Submission 5 is the team's best completed Kaggle submission, with outer validation Macro F1 0.5590271875 and public Macro F1 0.56654.
 
-Kaggle version 2 of the private Python script job [Submission 5 XLM-R](https://www.kaggle.com/code/jahidul183019/submission-5-xlm-r) completed successfully. Server metadata confirms `kernel_type: script`, private visibility, GPU enabled, internet enabled, the T4 machine type and the attached competition data. The run selected epoch 3, passed the validation gate and generated `submission5_xlmr.csv`. Its Kaggle competition score is pending manual submission.
+Kaggle version 2 of the private Python script job [Submission 5 XLM-R](https://www.kaggle.com/code/jahidul183019/submission-5-xlm-r) completed successfully. Server metadata confirms `kernel_type: script`, private visibility, GPU enabled, internet enabled, the T4 machine type and the attached competition data. The run selected epoch 3, passed the validation gate and generated `submission5_xlmr.csv`. Kaggle accepted the file with public Macro F1 **0.56654**, an improvement of **0.01895** over submission 4.
 
 Phone and identity verification are complete, and the Kaggle CLI is authenticated. The local `.ipynb` draft was removed. The launch configuration is `kaggle/submission5-script/kernel-metadata.json`; no notebook is used for this training job.
 
@@ -24,7 +24,9 @@ A fresh model then trains on the outer fitting rows for that epoch count. The ou
 
 Inner validation selected epoch 3 with Macro F1 **0.5500206584**. The fresh outer evaluation achieved Macro F1 **0.5590271875**, improving on submission 4's directly comparable outer score by **0.0213693011**. Per-class outer F1 was 0.68110 for label 0, 0.50630 for label 1 and 0.48968 for label 2.
 
-The final model trained for three epochs on all 47,817 labeled rows. Reloaded-model predictions matched the original predictions. The generated CSV contains 11,955 unique IDs in sample-submission order, uses only labels 0–2 and has SHA-256 `29b866e0315a8cab515bc9d1c8e5397a2418ed3d033cd091f41862e548c19419`. The file is ready for manual Kaggle submission. The outer result is still based on a reused development holdout and does not guarantee improvement on the public or private test subsets.
+The final model trained for three epochs on all 47,817 labeled rows. Reloaded-model predictions matched the original predictions. The generated CSV contains 11,955 unique IDs in sample-submission order, uses only labels 0–2 and has SHA-256 `29b866e0315a8cab515bc9d1c8e5397a2418ed3d033cd091f41862e548c19419`. The outer result is still based on a reused development holdout and does not guarantee improvement on the public or private test subsets.
+
+Kaggle processed `submission5_xlmr.csv` successfully and reported public Macro F1 **0.56654**. The private score remains unavailable. Current leaderboard position and competitor scores are intentionally not recorded because they change over time.
 
 Each epoch retains its configuration, tokenizer, metrics and validation logits. After a phase finishes, the selected epoch keeps its full model weights and redundant weights from the other epochs are removed. `checkpoint_retention.json` records the retained checkpoint and removed files. The pinned initial model, copied source, settings, split indices and history are sufficient to reproduce the discarded weights while keeping Kaggle output size manageable. Existing run directories are rejected. Final predictions are checked after reloading the saved model and the CSV is checked against sample-submission IDs and ordering. Kaggle uploads remain manual.
 

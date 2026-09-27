@@ -267,5 +267,12 @@
   "submission_sha256": "29b866e0315a8cab515bc9d1c8e5397a2418ed3d033cd091f41862e548c19419",
   "submission_rows": 11955,
   "final_model": "/kaggle/working/models/submission5/final/epoch3",
-  "reload_verified": true
+  "reload_verified": true,
+  "kaggle_submission": {
+    "filename": "submission5_xlmr.csv",
+    "status": "complete",
+    "public_macro_f1": 0.56654,
+    "gain_over_submission4_public": 0.01895,
+    "private_macro_f1": null
+  }
 }
