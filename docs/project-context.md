@@ -41,11 +41,22 @@ The first two leaderboard scores are recorded in submission order; their uploade
 - Final-selection checkbox was unchecked in the recorded submission view. The private score is unconfirmed.
 - Preserve all previous data, code, models, and submissions. The new training script rejects existing output paths and records hashes to verify earlier artifacts remain unchanged.
 
+## Fourth submission
+
+- Script: `src/train_submission4.py`; report: `reports/submission4.md`; metrics: `reports/submission4_metrics.json`.
+- Selected three NB-SVM feature configurations using the inner grouped split, with `C=0.1`, `alpha=1.0`, approximately equal weights, and score offsets `[0, -0.05, -0.05]`.
+- Validation Macro F1: **0.5376578865**, up **0.0032387704** from submission 3. The gain is small; the paired group-bootstrap interval includes zero.
+- Kaggle status: **Complete** for `submission4_tfidf_nbsvm_views.csv`, with public Macro F1 **0.54759**, up **0.00158** from submission 3. Its final-selection checkbox was unchecked when recorded.
+- Final and validation model predictions were independently reproduced. The final CSV contains 11,955 rows.
+- The script now checks all output paths before training and supports `--run-name` and `--reference-validation` for isolated reruns. Its modeling logic is unchanged. The original executed script is retained locally in `models/submission4_training_original.py`.
+
 ## Repository and restrictions
+
+- Teammate setup, reproduction commands, and next-model guidance: `docs/team-setup.md`.
 
 - GitHub repository: `Jahidul183019/HerWILL-UAP-Datathon-2026` (private when last checked).
 - Original dataset archive is in `data/archives/`; extracted CSVs are in `data/raw/`.
-- Competition data, model artifacts, and prediction CSVs remain local and are ignored by Git. Competition rules prohibit distributing the dataset outside the competition.
+- The three original CSVs in `data/raw/` are tracked in the private repository for authorized team access. Archives, processed data, model artifacts, and prediction CSVs remain ignored. Competition rules prohibit distributing the dataset outside the competition.
 - Both Kaggle predictions and best-result source code through the organizers' form are required. Code can be submitted through the form only once.
 
 See `competition.md` for references and `../reports/baseline.md` for detailed baseline results. Check Git status for the current local/remote synchronization state.

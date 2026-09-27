@@ -2,6 +2,8 @@
 
 Research Expo 2.0 competition workspace for classifying harmful Bangla, English, and Banglish social media text.
 
+Teammates: start with [setup and next-model instructions](docs/team-setup.md). This private repository includes the original CSVs, dependencies, training scripts, and results needed to start a new experiment.
+
 See [project status](docs/project-context.md) for progress and results. The public leaderboard uses approximately 40% of test data; final leaderboard results use the other 60%.
 
 ## Task
@@ -17,7 +19,7 @@ Predict one class per test post. Evaluation uses **Macro F1**.
 ## Repository layout
 
 ```text
-data/           Data documentation; local datasets are ignored by Git
+data/           Original CSVs in raw/ and data documentation
 docs/           Competition requirements and references
 notebooks/      Analysis and training notebooks
 src/            Reusable preprocessing, training, and inference code
@@ -62,11 +64,15 @@ Run `python3 src/train_submission3.py` to reproduce training, or `python3 src/pr
 
 Kaggle accepted submission 3 with a public Macro F1 of **0.54601**, improving by **0.00857** over submission 2. Private leaderboard results are pending.
 
+## Fourth submission
+
+The [fourth model](reports/submission4.md) combines three TF-IDF NB-SVM feature configurations. It achieved **0.53766 validation Macro F1** and **0.54759 public Macro F1**, improving the public score by **0.00158** over submission 3. The accepted file is `submissions/submission4_tfidf_nbsvm_views.csv`.
+
 ## Data access
 
 Download the files through the [competition Data page](https://www.kaggle.com/competitions/HerWILL-Safe-Social-Media-Datathon-2026/data) after obtaining authorized access. Place the three CSV files in `data/raw/`. See [data/README.md](data/README.md) for their schemas.
 
-The organizers restrict the dataset to this competition and prohibit sharing or publishing it outside the competition. Dataset archives, CSVs, processed data, model artifacts, and submissions are excluded from version control. Do not include dataset text in committed notebook outputs or reports.
+The organizers restrict the dataset to this competition and prohibit sharing or publishing it outside the competition. The three original CSVs in `data/raw/` are tracked for authorized teammates in this private repository. Dataset archives, processed data, model artifacts, and submissions remain excluded from version control. Keep repository access limited to the competition team.
 
 ## Participation requirements
 

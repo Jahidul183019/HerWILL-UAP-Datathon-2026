@@ -1,4 +1,4 @@
-# Competition datasets and derived records must remain local.
+# Ignore archives and generated data; track original CSVs for the private team repository.
 /data/*
 !/data/README.md
 *.csv
@@ -9,6 +9,11 @@
 *.zip
 *.tar
 *.gz
+!/data/raw/
+/data/raw/*
+!/data/raw/train.csv
+!/data/raw/test.csv
+!/data/raw/sample_submission.csv
 /models/*
 !/models/README.md
 /submissions/*
