@@ -1,0 +1,1208 @@
+{
+  "run_name": "submission3",
+  "candidates": [
+    {
+      "name": "submission2_reference",
+      "kind": "nb",
+      "C": 0.25,
+      "alpha": 1.0,
+      "meta": false,
+      "clean": false,
+      "inner_macro_f1": 0.5170402404366082
+    },
+    {
+      "name": "nb_meta_025",
+      "kind": "nb",
+      "C": 0.25,
+      "alpha": 1.0,
+      "meta": true,
+      "clean": false,
+      "inner_macro_f1": 0.5156064441449428
+    },
+    {
+      "name": "nb_meta_01",
+      "kind": "nb",
+      "C": 0.1,
+      "alpha": 1.0,
+      "meta": true,
+      "clean": false,
+      "inner_macro_f1": 0.5262360199683924
+    },
+    {
+      "name": "nb_meta_alpha05",
+      "kind": "nb",
+      "C": 0.25,
+      "alpha": 0.5,
+      "meta": true,
+      "clean": false,
+      "inner_macro_f1": 0.5118758800579952
+    },
+    {
+      "name": "nb_meta_majority",
+      "kind": "nb",
+      "C": 0.25,
+      "alpha": 1.0,
+      "meta": true,
+      "clean": true,
+      "inner_macro_f1": 0.5170130627775188
+    },
+    {
+      "name": "lr_meta",
+      "kind": "lr",
+      "C": 4.0,
+      "alpha": 1.0,
+      "meta": true,
+      "clean": false,
+      "inner_macro_f1": 0.5171431458926498
+    }
+  ],
+  "selection_trials": [
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5290376859957854
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5267061285093732
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5247539235090654
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.51992501251865
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inner_macro_f1": 0.5262360199683924
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "inner_macro_f1": 0.5266846427789056
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "inner_macro_f1": 0.5244002336733197
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "inner_macro_f1": 0.5216440136470432
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5235106725161632
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5240947170086899
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5256604511911029
+    },
+    {
+      "indices": [
+        2
+      ],
+      "weights": [
+        1.0
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.5216906418000761
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5249984391770418
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.523318539220373
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5191505374758095
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.5138460957234141
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inner_macro_f1": 0.524137602469334
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "inner_macro_f1": 0.5250638060168227
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "inner_macro_f1": 0.5214468731150356
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "inner_macro_f1": 0.5171211089967679
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5226480185095356
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5244486525801922
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5232346023365068
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.5191973664777546
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5253002241887118
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5239260343961428
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5192914298653258
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.5140813369725046
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inner_macro_f1": 0.5244575484513857
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "inner_macro_f1": 0.5252250105381003
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "inner_macro_f1": 0.5222431342102893
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "inner_macro_f1": 0.5171921366773332
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5225123544149365
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5249016922630617
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5237497351750763
+    },
+    {
+      "indices": [
+        2,
+        5
+      ],
+      "weights": [
+        0.5043574159678754,
+        0.49564258403212474
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.5199878996034561
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5267356753970844
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5226683539719604
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5202456743558949
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.51744593624479
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inner_macro_f1": 0.5269071746345004
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "inner_macro_f1": 0.5250693168640066
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "inner_macro_f1": 0.5221986002593634
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "inner_macro_f1": 0.5196025162156479
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5214281261899173
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5244816030288529
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5234933877107099
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.5197250983203543
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.5266297275182893
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5226683539719604
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5202451552490469
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        -0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.5172259617777301
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "inner_macro_f1": 0.5267972480807915
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "inner_macro_f1": 0.5250695361885765
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "inner_macro_f1": 0.5221675824698911
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "inner_macro_f1": 0.5196308999383674
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "inner_macro_f1": 0.521642632515793
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.1
+      ],
+      "inner_macro_f1": 0.5248112738066765
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "inner_macro_f1": 0.5237924391261305
+    },
+    {
+      "indices": [
+        2,
+        5,
+        0
+      ],
+      "weights": [
+        0.3372401149617674,
+        0.3314129161721055,
+        0.33134696886612724
+      ],
+      "offsets": [
+        0.0,
+        0.1,
+        0.3
+      ],
+      "inner_macro_f1": 0.5200629433331906
+    }
+  ],
+  "selected": [
+    {
+      "name": "nb_meta_01",
+      "kind": "nb",
+      "C": 0.1,
+      "alpha": 1.0,
+      "meta": true,
+      "clean": false
+    }
+  ],
+  "ensemble": {
+    "indices": [
+      2
+    ],
+    "weights": [
+      1.0
+    ],
+    "offsets": [
+      0.0,
+      -0.1,
+      0.0
+    ],
+    "inner_macro_f1": 0.5290376859957854
+  },
+  "macro_f1": 0.5344191160729145,
+  "submission2_macro_f1": 0.5275587793849877,
+  "improvement": 0.006860336687926738,
+  "split": {
+    "outer_seed": 42,
+    "outer_folds": 5,
+    "fold": 0,
+    "inner_seed": 43,
+    "inner_folds": 4,
+    "inner_fit": 28690,
+    "inner_validation": 9564,
+    "outer_fit": 38254,
+    "outer_validation": 9563
+  },
+  "features": {
+    "word_ngrams": [
+      1,
+      2
+    ],
+    "char_ngrams": [
+      2,
+      5
+    ],
+    "word_max": 150000,
+    "char_max": 250000,
+    "min_df": 2,
+    "meta_names": [
+      "length",
+      "words",
+      "mean_word_length",
+      "uppercase_ratio",
+      "digit_ratio",
+      "punctuation_ratio",
+      "emoji_count",
+      "bangla_ratio",
+      "exclamations",
+      "questions",
+      "repeated_runs",
+      "unique_word_ratio",
+      "has_bangla",
+      "mostly_uppercase",
+      "whitespace_ratio"
+    ],
+    "meta_weight": 0.2
+  },
+  "validation_label_changes": [
+    0
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.663917089678511,
+      "recall": 0.6607030098926542,
+      "f1-score": 0.6623061504378099,
+      "support": 4751.0
+    },
+    "1": {
+      "precision": 0.512486427795874,
+      "recall": 0.5196807046518029,
+      "f1-score": 0.5160584939182725,
+      "support": 3633.0
+    },
+    "2": {
+      "precision": 0.4300608166811468,
+      "recall": 0.4198473282442748,
+      "f1-score": 0.4248927038626609,
+      "support": 1179.0
+    },
+    "accuracy": 0.5774338596674684,
+    "macro avg": {
+      "precision": 0.5354881113851774,
+      "recall": 0.533410347596244,
+      "f1-score": 0.5344191160729145,
+      "support": 9563.0
+    },
+    "weighted avg": {
+      "precision": 0.5775567278168031,
+      "recall": 0.5774338596674684,
+      "f1-score": 0.5774762655013276,
+      "support": 9563.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3139,
+      1352,
+      260
+    ],
+    [
+      1349,
+      1888,
+      396
+    ],
+    [
+      240,
+      444,
+      495
+    ]
+  ],
+  "input_sha256": {
+    "train": "a269ad841f824c6e60930cfda8cb25bdce58a6a1ee01fc1fe663d23b19e34449",
+    "test": "cca36f5416abfb8a41b1c84e5fa83aec18ffbff32fecd277c668a3f73312a38f",
+    "sample_submission": "0f7d405dbd1e88ea285c7138514b7652f7441e995dcaed338bb208a86c2f347d"
+  },
+  "source_sha256": {
+    "train_submission3.py": "d82eb4d844352ccf1fee4896578fd4bb12f1586a2fe5b1f65c88f9aaebb98fd4",
+    "submission3_model.py": "453db2db1d98561ac29c64c1c14a208f8b58c270379763ad0bdcf4d9067a0dbc",
+    "train_submission2.py": "e8f7f569a27d42372a11638117eb2cb65efd54aaedd8f837c595f1c8dc989550",
+    "train_baseline.py": "32a08f25b221d2ddede90f0a5e522c6425967b8971fd421818dfd8c37efd9e95",
+    "nbsvm.py": "c862f1aee60efc678650acd79ceed83a64426b64dd72c1e9705b028f88d9569b",
+    "requirements.txt": "59bdf1522d6fedfc58f907c8604390c9b7bd633e0055e6ce65cfdb369bf882cd"
+  },
+  "preserved_artifact_sha256": {
+    "data/raw/test.csv": "cca36f5416abfb8a41b1c84e5fa83aec18ffbff32fecd277c668a3f73312a38f",
+    "data/raw/train.csv": "a269ad841f824c6e60930cfda8cb25bdce58a6a1ee01fc1fe663d23b19e34449",
+    "data/raw/sample_submission.csv": "0f7d405dbd1e88ea285c7138514b7652f7441e995dcaed338bb208a86c2f347d",
+    "data/archives/HerWILL-Safe-Social-Media-Datathon-2026.zip": "1d7ab99fa0518e275da359591bd1a6d29c02181cd7a43b582871287c2b830bd7",
+    "models/submission2_tfidf_nbsvm.joblib": "6301354761b67eeadfee57710f1c5be29edfafbb84c45873af28840dd7364650",
+    "models/README.md": "9e733b64124af23911e34f9b4d4b769ff890b2cb17cb3807696ea9b122b68e2c",
+    "models/baseline_tfidf_svc.joblib": "a54608fb3eb84bab498210244b00f0d7dee7211b9bc9f3e4c341229cc1c4b869",
+    "submissions/submission1_tfidf_svc.csv": "ed4e97d067399be4df8e3173aaf52ca80d97c1dd663ffcf7f408c4b76b28d51c",
+    "submissions/README.md": "5e538d129f31a5edaeffb1b8d4b79fd27763205e872b3ba0789ba5aab325fbc7",
+    "submissions/submission2_tfidf_nbsvm.csv": "2a502d6f3ad89b8d54795c0373ed63a289ff78fbea28fe72addd8243b62f1255"
+  },
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "submission": "submissions/submission3_ensemble.csv",
+  "test_rows": 11955,
+  "final_label_changes": [
+    0
+  ],
+  "model_reload_verified": true,
+  "elapsed_seconds": 220.85,
+  "earlier_artifacts_unchanged": true
+}

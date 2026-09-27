@@ -31,6 +31,6 @@ Explicit toxicity is the strongest class. Neutral recall (0.3723) is the weakest
 
 ## Public leaderboard feedback
 
-Team `DU_NameDiyeKiAsheJay` achieved a public Macro F1 of **0.50248** on its first entry, placing second when recorded. This was 0.008893 below the local validation score of 0.511373. The two scores use different data subsets; their proximity alone does not establish validation reliability.
+Team `DU_NameDiyeKiAsheJay` achieved a public Macro F1 of **0.50248** on its first entry. This was 0.008893 below the local validation score of 0.511373. The two scores use different data subsets; their proximity alone does not establish validation reliability.
 
-The leading score at that point was 0.54629. Public scoring uses approximately 40% of test data; final leaderboard results use the other 60%. Model selection remains based on local validation.
+Public scoring uses approximately 40% of test data; final leaderboard results use the other 60%. Model selection remains based on local validation.

@@ -2,6 +2,8 @@
 
 Updated 2026-09-27.
 
+Track our validation scores, Kaggle scores, and submission status. Do not track leaderboard positions or competitor scores.
+
 ## Evaluation
 
 Public leaderboard: approximately 40% of test rows. Private leaderboard: the other 60%, used for final leaderboard results. Subset membership is unknown. This is separate from the local validation split. Prefer robust local validation when comparing models; public leaderboard gains may not generalize to the private portion.
@@ -13,8 +15,8 @@ Public leaderboard: approximately 40% of test rows. Private leaderboard: the oth
 - Validation uses one held-out fold of a seeded five-fold stratified group split; normalized duplicates stay together. This is not an average over five folds.
 - Final model was refitted on all 47,817 training rows and generated 11,955 test predictions in `submissions/submission1_tfidf_svc.csv`.
 - Saved model reload and all submission predictions, IDs, column names, and ordering were verified.
-- The team's first submission achieved a public Macro F1 of **0.50248**, placing second when recorded. The leading score was 0.54629.
-- Public results cover approximately 40% of the test set and do not establish performance or rank on the private 60%.
+- The team's first submission achieved a public Macro F1 of **0.50248**.
+- Public results cover approximately 40% of the test set and do not establish performance on the private 60%.
 
 ## Second submission
 
@@ -23,9 +25,21 @@ Public leaderboard: approximately 40% of test rows. Private leaderboard: the oth
 - Training: `src/train_submission2.py`; classifier implementation: `src/nbsvm.py`; report: `reports/submission2.md`.
 - Output: `submissions/submission2_tfidf_nbsvm.csv`.
 - After two entries, team `DU_NameDiyeKiAsheJay` achieved a best public Macro F1 of **0.53744**, improving by **0.03496** over its first entry.
-- Last recorded rank: **2**. The leading score was 0.54629, a gap of 0.00885. Private results are pending.
+- Private results are pending.
 
-Leaderboard scores are recorded here in submission order. Uploaded filenames have not been checked against Kaggle's submission history.
+The first two leaderboard scores are recorded in submission order; their uploaded filenames have not been verified. The third submission record confirms both its filename and score.
+
+## Third submission
+
+- Pipeline: `src/train_submission3.py`; model and feature code: `src/submission3_model.py`; inference: `src/predict_submission3.py`.
+- Six candidates and 60 score-combination configurations were evaluated on the inner grouped split. The outer holdout was used after selection.
+- Selected: NB-SVM with 15 numerical text features, `C=0.1`, `alpha=1.0`, score offsets `[0, -0.1, 0]`. One model, no label cleaning.
+- Validation Macro F1: **0.5344191161**, an increase of **0.0068603367** over submission 2. Subtle-toxicity F1 declined while explicit and neutral F1 improved.
+- Model bundle: `models/submission3/final_model.joblib`. Upload CSV: `submissions/submission3_tfidf_nbsvm_meta.csv`, a byte-identical copy of the retained `submissions/submission3_ensemble.csv` pipeline output.
+- All 11,955 predictions were independently reproduced in a separate process; hashes confirmed earlier protected artifacts were unchanged. The Desktop proposal remains unchanged.
+- Kaggle status: **Complete** for `submission3_tfidf_nbsvm_meta.csv`, with public Macro F1 **0.54601**. Improvement over submission 2: **0.00857**; improvement over submission 1: **0.04353**.
+- Final-selection checkbox was unchecked in the recorded submission view. The private score is unconfirmed.
+- Preserve all previous data, code, models, and submissions. The new training script rejects existing output paths and records hashes to verify earlier artifacts remain unchanged.
 
 ## Repository and restrictions
 

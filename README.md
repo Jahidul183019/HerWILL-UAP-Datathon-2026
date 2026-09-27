@@ -46,13 +46,21 @@ Outputs:
 - `models/baseline_tfidf_svc.joblib`: local model fitted on all training rows.
 - `submissions/submission1_tfidf_svc.csv`: local Kaggle-format predictions.
 
-The saved pipeline expects text normalized with `normalize()` in the training script before inference. The team's first submission achieved a public Macro F1 of **0.50248**, placing second when recorded.
+The saved pipeline expects text normalized with `normalize()` in the training script before inference. The team's first submission achieved a public Macro F1 of **0.50248**.
 
 ## Second submission
 
 The [second model](reports/submission2.md) uses NB-SVM and scores **0.52756 validation Macro F1**, compared with **0.51137** for the first model. Run `python3 src/train_submission2.py` after the baseline to reproduce it. Its prediction file is `submissions/submission2_tfidf_nbsvm.csv`.
 
-After two entries, the team's best public Macro F1 is **0.53744**, up from **0.50248**. The last recorded rank is second; private leaderboard results are pending.
+After two entries, the team's best public Macro F1 was **0.53744**, up from **0.50248**.
+
+## Third submission
+
+The [third experiment](reports/submission3.md) achieved **0.53442 validation Macro F1**. It selected an NB-SVM with numerical text features, `C=0.1`, and a class-score adjustment using inner validation. It uses original labels and one selected model.
+
+Run `python3 src/train_submission3.py` to reproduce training, or `python3 src/predict_submission3.py` to regenerate predictions from the saved model. Existing outputs are preserved; a training rerun requires a new `--run-name`. The upload file is `submissions/submission3_tfidf_nbsvm_meta.csv`, an identical copy of the retained pipeline output `submission3_ensemble.csv`.
+
+Kaggle accepted submission 3 with a public Macro F1 of **0.54601**, improving by **0.00857** over submission 2. Private leaderboard results are pending.
 
 ## Data access
 

@@ -44,11 +44,11 @@ To reload the saved model, add `src/` to the Python import path so `nbsvm` is av
 
 ## Public leaderboard result
 
-After its second entry, team `DU_NameDiyeKiAsheJay` improved its best public Macro F1 from **0.50248 to 0.53744**. The team remained second when recorded, trailing the leading score of 0.54629 by 0.00885.
+After its second entry, team `DU_NameDiyeKiAsheJay` improved its best public Macro F1 from **0.50248 to 0.53744**.
 
 | Result | Submission 1 | Submission 2 | Change |
 | --- | ---: | ---: | ---: |
 | Local validation Macro F1 | 0.51137 | 0.52756 | +0.01619 |
 | Public leaderboard Macro F1 | 0.50248 | 0.53744 | +0.03496 |
 
-Public and validation scores improved, but the public leaderboard covers approximately 40% of test rows. Final leaderboard results depend on the other 60%; the private score and rank remain unknown. Continue using local validation to select models.
+Public and validation scores improved, but the public leaderboard covers approximately 40% of test rows. Final leaderboard results depend on the other 60%; the private score remains unknown. Continue using local validation to select models.
