@@ -50,6 +50,16 @@ The first two leaderboard scores are recorded in submission order; their uploade
 - Final and validation model predictions were independently reproduced. The final CSV contains 11,955 rows.
 - The script now checks all output paths before training and supports `--run-name` and `--reference-validation` for isolated reruns. Its modeling logic is unchanged. The original executed script is retained locally in `models/submission4_training_original.py`.
 
+## Fifth submission experiment
+
+- XLM-R pipeline: `src/train_submission5.py`; setup and evaluation plan: `reports/submission5.md`.
+- MPS is available outside the sandbox, and a short local GPU benchmark succeeded. Full training is assigned to Kaggle GPU.
+- Inner validation selects the epoch count before outer evaluation. Final refit and CSV generation require outer Macro F1 above submission 4's 0.5376578865. The reused holdout remains a development estimate.
+- No validation or public score is available yet. Submission 4 remains the best completed model. Check `models/submission5_launch/` for local process status and `reports/submission5_metrics.json` for results when available.
+- Local training launched on 2026-09-27 at 21:34 Bangladesh time, then was stopped at the request to switch to Kaggle GPU. The process group was terminated and local files are preserved; the stop record is `models/submission5_launch/stopped.json`.
+- Kaggle phone and identity verification are complete, and the CLI is authenticated. Version 2 of `jahidul183019/submission-5-xlm-r` was accepted and queued for a GPU worker. It keeps the selected checkpoint weights while retaining every epoch's metrics and validation logits. Server metadata confirms a private Python script kernel (`kernel_type: script`), T4 GPU, internet and competition data. The launch configuration is under `kaggle/submission5-script/`. The local `.ipynb` draft was removed.
+- Earlier scripts, models, data, metrics and predictions are preserved. Training runs independently of Codex and makes no OpenAI API calls.
+
 ## Repository and restrictions
 
 - Teammate setup, reproduction commands, and next-model guidance: `docs/team-setup.md`.

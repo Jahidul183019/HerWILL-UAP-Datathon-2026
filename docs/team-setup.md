@@ -13,7 +13,14 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-The recorded runs used Python 3.14.3. The pinned packages require Python 3.11 or newer. These four models run on CPU; no Kaggle authentication, GPU, pretrained weights, or external datasets are required. GitHub access to the private repository is required to clone it.
+The recorded runs used Python 3.14.3. The pinned packages require Python 3.11 or newer. Submissions 1–4 run on CPU. Submission 5 requires the transformer environment and a suitable GPU:
+
+```bash
+python -m pip install -r requirements-transformer.txt
+python src/train_submission5.py --run-name submission5_repeat --device cuda
+```
+
+`requirements-transformer.txt` includes the base requirements and pins the transformer libraries. The script can also run with `--device mps` on a compatible Mac. GitHub access to the private repository is required to clone it.
 
 ## Inputs and results
 
@@ -32,9 +39,9 @@ Labels are 0 (explicitly toxic/hateful), 1 (subtly toxic), and 2 (neutral). Inpu
 | 3 | NB-SVM + numerical text features | 0.53442 | 0.54601 |
 | 4 | Three TF-IDF NB-SVM feature configurations | 0.53766 | 0.54759 |
 
-## Start the next model
+## Submission 5 transformer experiment
 
-Create a new script such as `src/train_submission5.py`. Preserve scripts and artifacts for earlier submissions. Useful imports are `normalize`, `ROOT`, `LABELS`, and `SEED` from `train_baseline.py`; `NBSVM` from `nbsvm.py`; and the feature/ensemble functions in `train_submission4.py`.
+`src/train_submission5.py` fine-tunes the pinned XLM-R-base checkpoint. See `reports/submission5.md` for its configuration, validation gate and Kaggle script commands. Preserve scripts and artifacts for earlier submissions.
 
 To compare directly with existing experiments, reconstruct the established split:
 
@@ -58,6 +65,8 @@ Expected sizes: outer fit 38,254, outer holdout 9,563, inner fit 28,690, inner v
 This holdout has already informed several experiments. Broader grouped validation is useful before treating small score gains as reliable. The public leaderboard covers approximately 40% of test data; final evaluation uses the other 60%. Track our scores and submission status, not leaderboard positions.
 
 Use a new prefix for every experiment's models, predictions, and report. Produce `id,y_pred` in sample-submission order, save the model and preprocessing, and reload it to verify predictions. Kaggle uploads are handled manually.
+
+The `--stage inner`, `--stage outer` and `--stage final` options resume only when the earlier run directory is present. `/kaggle/working` does not carry files into a separate Kaggle session automatically. Before continuing in a later session, save the prior output as a Kaggle version and attach or copy its complete `models/<run-name>/` directory, metrics and processed validation file into the new working directory. The source hash and configuration checks reject a mismatched resume.
 
 ## Reproduce earlier models from a fresh clone
 
