@@ -72,6 +72,10 @@ The [fourth model](reports/submission4.md) combines three TF-IDF NB-SVM feature 
 
 The [fifth model](reports/submission5.md) fine-tunes XLM-R-base with grouped duplicate-aware validation and class-weighted loss. It achieved **0.55903 outer validation Macro F1** and **0.56654 public Macro F1**, improving the public score by **0.01895** over submission 4. The accepted file is `submissions/submission5_xlmr.csv`.
 
+## Sixth submission
+
+The [sixth model](reports/submission6.md) blends XLM-R-large with the submission 4 NB-SVM views, choosing the blend weight and class offsets on inner validation. Launch it on a Kaggle T4 with `kaggle kernels push -p kaggle/submission6-script`. It writes `submissions/submission6_xlmr_large_nbsvm.csv` only if its outer Macro F1 beats submission 5.
+
 ## Data access
 
 Download the files through the [competition Data page](https://www.kaggle.com/competitions/HerWILL-Safe-Social-Media-Datathon-2026/data) after obtaining authorized access. Place the three CSV files in `data/raw/`. See [data/README.md](data/README.md) for their schemas.

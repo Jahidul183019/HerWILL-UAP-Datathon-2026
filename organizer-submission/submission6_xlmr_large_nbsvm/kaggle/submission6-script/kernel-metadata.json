@@ -1,0 +1,17 @@
+{
+  "id": "swarlok/submission-6-xlm-r-large-nb-svm",
+  "title": "Submission 6 XLM-R-large NB-SVM",
+  "code_file": "../../src/train_submission6.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "competition_sources": [
+    "HerWILL-Safe-Social-Media-Datathon-2026"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}
