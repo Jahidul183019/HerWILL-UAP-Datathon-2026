@@ -1,0 +1,88 @@
+{
+  "macro_f1": 0.6802982372325143,
+  "classification_report": {
+    "0": {
+      "precision": 0.7769445039640026,
+      "recall": 0.7632077457377394,
+      "f1-score": 0.7700148651518369,
+      "support": 4751.0
+    },
+    "1": {
+      "precision": 0.632814493493238,
+      "recall": 0.6826314340765208,
+      "f1-score": 0.6567796610169492,
+      "support": 3633.0
+    },
+    "2": {
+      "precision": 0.6775844421699079,
+      "recall": 0.5614927905004241,
+      "f1-score": 0.614100185528757,
+      "support": 1179.0
+    },
+    "accuracy": 0.7077277005123915,
+    "macro avg": {
+      "precision": 0.6957811465423829,
+      "recall": 0.6691106567715615,
+      "f1-score": 0.6802982372325143,
+      "support": 9563.0
+    },
+    "weighted avg": {
+      "precision": 0.7099393966864197,
+      "recall": 0.7077277005123915,
+      "f1-score": 0.7077742603314188,
+      "support": 9563.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3626,
+      1042,
+      83
+    ],
+    [
+      921,
+      2480,
+      232
+    ],
+    [
+      120,
+      397,
+      662
+    ]
+  ],
+  "model": "logistic regression over XLM-R-base, NB-SVM and ID-neighbour label features",
+  "offsets": [
+    0.0,
+    0.2,
+    0.5
+  ],
+  "inner_cv_macro_f1": 0.6641053067293905,
+  "outer_components": {
+    "submission7_blend": 0.5798244649952974,
+    "id_neighbours_only": 0.6109390191671924
+  },
+  "gain_over_submission7": 0.10047377223721687,
+  "input_sha256": {
+    "train": "a269ad841f824c6e60930cfda8cb25bdce58a6a1ee01fc1fe663d23b19e34449",
+    "test": "cca36f5416abfb8a41b1c84e5fa83aec18ffbff32fecd277c668a3f73312a38f",
+    "sample_submission": "0f7d405dbd1e88ea285c7138514b7652f7441e995dcaed338bb208a86c2f347d"
+  },
+  "source_sha256": "33562003dfadc8ea267ddbcb601228948f42ab58ba11b0875b255c8c748063e5",
+  "neighbours": [
+    1,
+    2,
+    5,
+    10,
+    25
+  ],
+  "status": "ready_for_manual_submission",
+  "limitation": "Relies on ID order carrying source information; single reused outer holdout.",
+  "submission": "submissions/submission8_id_neighbour_stack.csv",
+  "submission_sha256": "9160749d63de7772b9d565e3b0697490653b761f54cddcab5342e80bd6c2630c",
+  "submission_rows": 11955,
+  "test_label_share": [
+    5952,
+    4767,
+    1236
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "jahidul183019/submission-5-xlm-r",
+  "title": "Submission 5 XLM-R",
+  "code_file": "../../src/train_submission5.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "competition_sources": [
+    "HerWILL-Safe-Social-Media-Datathon-2026"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}

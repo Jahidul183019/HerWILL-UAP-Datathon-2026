@@ -1,0 +1,18 @@
+{
+  "id": "jahidul183019/submission-6-xlm-r-large",
+  "title": "Submission 6 XLM-R Large",
+  "code_file": "../../src/train_submission6_xlmr_large.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "HerWILL-Safe-Social-Media-Datathon-2026"
+  ],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

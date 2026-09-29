@@ -1,0 +1,87 @@
+{
+  "macro_f1": 0.5798244649952974,
+  "classification_report": {
+    "0": {
+      "precision": 0.6915847928235797,
+      "recall": 0.6815407282677332,
+      "f1-score": 0.6865260256546167,
+      "support": 4751.0
+    },
+    "1": {
+      "precision": 0.5292580982236155,
+      "recall": 0.5576658409028351,
+      "f1-score": 0.5430907385069026,
+      "support": 3633.0
+    },
+    "2": {
+      "precision": 0.540360873694207,
+      "recall": 0.48261238337574214,
+      "f1-score": 0.5098566308243727,
+      "support": 1179.0
+    },
+    "accuracy": 0.609955035030848,
+    "macro avg": {
+      "precision": 0.5870679215804674,
+      "recall": 0.5739396508487701,
+      "f1-score": 0.5798244649952974,
+      "support": 9563.0
+    },
+    "weighted avg": {
+      "precision": 0.6112725600372991,
+      "recall": 0.609955035030848,
+      "f1-score": 0.6102535573170131,
+      "support": 9563.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3238,
+      1367,
+      146
+    ],
+    [
+      1269,
+      2026,
+      338
+    ],
+    [
+      175,
+      435,
+      569
+    ]
+  ],
+  "model": "submission 5 XLM-R-base logits + three TF-IDF NB-SVM views",
+  "blend": {
+    "weight": 0.6,
+    "offsets": [
+      0.0,
+      -0.05
+    ],
+    "macro_f1": 0.5720110476429855
+  },
+  "blend_trials": 3549,
+  "outer_components": {
+    "xlmr_base": 0.5590271875463054,
+    "nbsvm_views": 0.53479664128116,
+    "blend_without_offsets": 0.5780721778048133
+  },
+  "gain_over_submission5": 0.020797277448991958,
+  "input_sha256": {
+    "train": "a269ad841f824c6e60930cfda8cb25bdce58a6a1ee01fc1fe663d23b19e34449",
+    "test": "cca36f5416abfb8a41b1c84e5fa83aec18ffbff32fecd277c668a3f73312a38f",
+    "sample_submission": "0f7d405dbd1e88ea285c7138514b7652f7441e995dcaed338bb208a86c2f347d"
+  },
+  "source_sha256": "74bf7ee629b92550ee758a4fc4dd415fbd4841d8e925414f78dc95f90a878950",
+  "status": "ready_for_manual_submission",
+  "limitation": "Single reused outer holdout; not an independent final test.",
+  "submission": "submissions/submission7_xlmr_base_nbsvm.csv",
+  "submission_sha256": "741c39f264b604e7eb83cb76906963ff8dccc514097a0f2e5e2934523bccb166",
+  "submission_rows": 11955,
+  "test_label_share": [
+    6177,
+    4419,
+    1359
+  ],
+  "changed_vs_submission5": 1856,
+  "elapsed_seconds": 428.5
+}

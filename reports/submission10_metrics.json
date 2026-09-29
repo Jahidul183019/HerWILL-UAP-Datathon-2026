@@ -1,0 +1,84 @@
+{
+  "macro_f1": 0.7057238790095782,
+  "classification_report": {
+    "0": {
+      "precision": 0.7721770192498512,
+      "recall": 0.8189854767417386,
+      "f1-score": 0.7948927477017365,
+      "support": 4751.0
+    },
+    "1": {
+      "precision": 0.6785304247990815,
+      "recall": 0.6507018992568125,
+      "f1-score": 0.6643248559786427,
+      "support": 3633.0
+    },
+    "2": {
+      "precision": 0.7019230769230769,
+      "recall": 0.6191687871077184,
+      "f1-score": 0.6579540333483551,
+      "support": 1179.0
+    },
+    "accuracy": 0.7304193244797658,
+    "macro avg": {
+      "precision": 0.7175435069906699,
+      "recall": 0.6962853877020899,
+      "f1-score": 0.7057238790095782,
+      "support": 9563.0
+    },
+    "weighted avg": {
+      "precision": 0.727939073454294,
+      "recall": 0.7304193244797658,
+      "f1-score": 0.7284069278907319,
+      "support": 9563.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3891,
+      785,
+      75
+    ],
+    [
+      1034,
+      2364,
+      235
+    ],
+    [
+      114,
+      335,
+      730
+    ]
+  ],
+  "model": "LR + HGB stack: XLM-R logits, NB-SVM, ID-neighbour labels and neighbour NB-SVM scores",
+  "inner_to_outer_macro_f1": 0.7057238790095782,
+  "nested_cv_macro_f1": [
+    0.7016596897337569,
+    0.6986176624275092,
+    0.7010610836120214
+  ],
+  "nested_cv_mean": 0.7004461452577625,
+  "nested_cv_std": 0.0013158253221566797,
+  "final_offsets": [
+    0.0,
+    0.2,
+    0.7
+  ],
+  "uses_xlmr_large": true,
+  "stacking_rows": 19127,
+  "input_sha256": {
+    "train": "a269ad841f824c6e60930cfda8cb25bdce58a6a1ee01fc1fe663d23b19e34449",
+    "test": "cca36f5416abfb8a41b1c84e5fa83aec18ffbff32fecd277c668a3f73312a38f",
+    "sample_submission": "0f7d405dbd1e88ea285c7138514b7652f7441e995dcaed338bb208a86c2f347d"
+  },
+  "source_sha256": "16dfe5dbc087ad2c8d6d313e97d1da0b46fdc004eccd12021828d8d652451bb2",
+  "limitation": "Relies on ID order carrying source information.",
+  "status": "ready_for_manual_submission",
+  "submission": "submissions/submission10_robust_stack.csv",
+  "submission_sha256": "7194551e0a20696dd41f3a2076e55e1659bc78b5cbe5ddf433e938a6389ae80f",
+  "test_label_share": [
+    5887,
+    4558,
+    1510
+  ]
+}
